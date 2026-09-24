@@ -30,21 +30,23 @@ go build -o ainovel-cli ./cmd/ainovel-cli
 ./ainovel-cli --help
 ```
 
-也可以安装已发布版本：
+也可以从当前仓库源码安装，或安装已发布版本：
 
 ```bash
-# Go 安装
-go install github.com/voocel/ainovel-cli/cmd/ainovel-cli@latest
+# 从当前仓库源码安装
+git clone https://github.com/iris-cat-dev/ai-novel-cli.git
+cd ai-novel-cli
+go install ./cmd/ainovel-cli
 
 # macOS / Linux 安装脚本，无需本地 Go
-curl -fsSL https://raw.githubusercontent.com/voocel/ainovel-cli/main/scripts/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/iris-cat-dev/ai-novel-cli/main/scripts/install.sh | sh
 
 # 查看版本 / 更新发布版本
 ainovel-cli --version
 ainovel-cli update
 ```
 
-Windows 或手动安装请前往 [Releases](https://github.com/voocel/ainovel-cli/releases/latest)。安装脚本使用同一 Release 的 SHA256 清单校验安装包。安装和更新需要网络；已发布版本可能早于此接口变更，以该版本的 `--help` 为准，体验当前接口请构建当前源码。
+Windows 或手动安装请前往 [Releases](https://github.com/iris-cat-dev/ai-novel-cli/releases/latest)。安装脚本使用同一 Release 的 SHA256 清单校验安装包。安装和更新需要网络；已发布版本可能早于此接口变更，以该版本的 `--help` 为准，体验当前接口请构建当前源码。
 
 ## 命令接口
 
